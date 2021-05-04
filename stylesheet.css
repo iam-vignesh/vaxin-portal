@@ -1,0 +1,49 @@
+body{
+    background-image: url("background.jpeg");
+    color: white;
+}
+
+body{ 
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 2s; 
+    animation-fill-mode: forwards; 
+  } 
+  
+  
+  @keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+  }
+
+#plot{
+    font-size: 25px !important;
+}
+
+
+.form-control {
+    width: 35% !important;
+}
+
+#space{
+    padding-top: 35px;;
+}
+  
+
+@media only screen and (max-width: 600px) {
+
+  #plot{
+    font-size: 20px !important;
+ }
+
+  
+  #movie-info{
+    padding-top:40px;
+  }
+
+
+}
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8">
+    <title>Vaxin Search</title>
+    <link rel="shortcut icon" type="image/jpg" href="vax.jpg">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+ </head>
+
+
+
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Vaxin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://covid.army/" target="_blank">Covid-19 Resource</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.cowin.gov.in/home" target="_blank">CoWin Portal</a>
+        </li>
+        <li class="nav-item">
+      </ul>
+    </div>
+  </nav>
+ 
+  <body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+
+          </div>
+        </div>
+      </nav>
+
+      <div id = "space"></div>
+
+      <div>
+        <h2><center>Covid-19 Vaccation Center Search by Pincode</center></h2>
+      </div>
+
+      <div class="form-group">
+        <center>
+        <label for="exampleInputEmail1">Please enter the complete Pin Code</label>
+        <input type="email" class="form-control" id="pincode" aria-describedby="emailHelp" placeholder="Pin Code">
+        <small id="emailHelp" class="form-text text-muted">Enter the pin-code without any spaces.</small>
+        </center>
+      </div>
+
+      <br>
+      <div><center><p>The data shown are as per<strong> current date and time</strong>.</center></p>
+
+      <center><button type="button" class="btn btn-primary" id= "email"><center>Search</center></button></center>
+      </div>
+      <div id = movie-info>
+        <center>
+        <h2 id = "movie name"> </h2>
+        <br>
+        <br>
+        <h4 id ="plot-header">Vaccination Center Name</h4>
+        <p id = "plot"> </p>
+        <br>
+        <h4 id ="lang-header">Available Vaccine</h4>
+        <h3 id = "lang"></h3>
+        <br>
+        <h4 id ="slots-available">Most Available Slots(Common to all centers)</h4>
+        <h3 id = "slots"></h3>
+        </center>
+    </div>
+
+ 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    
+    </script>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="main.js.js"></script>
+
+<center>
+    <a href="https://twitter.com/intent/tweet?screen_name=mohfw_india&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-lang="en" data-show-count="false">Tweet to Health Ministry of India</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</center>
+</body>
+<footer>
+    <center>
+    <p>The site servies information from the public APIs from the Government of India. Please cross verify with CoWin Portal or contact the respective center if needed.</p>
+    <center>
+</footer>
+</html>
