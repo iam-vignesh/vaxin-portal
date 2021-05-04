@@ -31,6 +31,10 @@ body{
 #space{
     padding-top: 35px;;
 }
+
+.navbar-collapse.in {
+  display: block !important;
+}
   
 
 @media only screen and (max-width: 600px) {
