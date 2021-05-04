@@ -21,7 +21,7 @@ $("#email").click(function search(){
             var center_names =[];
 
             for(i=0; i<data.centers.length; i++){
-            center_names.push(data.centers[i].name);
+            center_names.push(data.centers[i].name + "<br>");
             console.log(data.centers[i].name);
             document.getElementById("plot").innerHTML = center_names;
             for( j = 0; j < data.centers[i].sessions.length; j++){
