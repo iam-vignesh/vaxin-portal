@@ -42,7 +42,10 @@ $("#email").click(function search(){
 $("#plot-header").show();  
 $("#imbd-header").show(); 
 $("#lang-header").show(); 
-$("#slots-available").show(); 
+$("#slots-available").show();
 
+        })
+        .fail(function(){
+            alert("Please check the entered Pin code!");
         })
       });
