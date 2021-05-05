@@ -10,10 +10,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet2.css">
+
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Vaxin</a>
+  <a class="navbar-brand" href="index.html">Vaxin</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aaria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,7 +23,7 @@
   <div class="collapse navbar-collapse" id="navbarColor03">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home
+        <a class="nav-link" href="index.html">Home
           <span class="sr-only">(current)</span>
         </a>
       </li>
@@ -47,37 +49,23 @@
       <div id = "space"></div>
 
       <div>
-        <h2><center>Covid-19 Vaccination Center Search by Pincode</center></h2>
-      </div>
-
-      <div class="form-group">
-        <center>
-        <label for="exampleInputEmail1">Please enter the complete Pin Code</label>
-        <input type="email" class="form-control" id="pincode" aria-describedby="emailHelp" placeholder="Pin Code">
-        <small id="emailHelp" class="form-text text-muted">Enter the pin-code without any spaces.</small>
-        </center>
+        <h2><center>Covid-19 Vaccination Center Search by Pincode - Help</center></h2>
       </div>
 
       <br>
-      <div><center><p>The data shown are as per<strong> current date and time</strong>.</center></p>
 
-      <center><button type="button" class="btn btn-primary" id= "email"><center>Search</center></button></center>
-      </div>
-      <div id = movie-info>
-        <center>
-        <h2 id = "movie name"> </h2>
-        <br>
-        <br>
-        <h4 id ="plot-header">Vaccination Center Name</h4>
-        <p id = "plot"> </p>
-        <br>
-        <h4 id ="lang-header">Available Vaccine</h4>
-        <h3 id = "lang"></h3>
-        <br>
-        <h4 id ="slots-available">Available Slots(Common to all centers)</h4>
-        <h3 id = "slots"></h3>
-        </center>
-    </div>
+<div id="help-div">
+      <h1>FAQs</h1>
+      <br>
+      <ol>
+          <li><h4>Are all these information up-to date?</h4></li>
+          <p>While vaccination center names are up-to date as per the information served by GoI, the vaccine and slot availabity is subject to change.</p>
+          <br>
+          <li><h4>I entered the right pin-code but I am unable to see the result. Why is that?</h4></li>
+          <p id = "cowin-link">If the pincode is correct but not showing any results, then most probably there are no vaccine centers in the said area. Please cross verify in the <a href= "https://www.cowin.gov.in/home" target="_blank"">CoWin Portal.</a></p>
+      </ol>
+</div>
+
 
 
 
