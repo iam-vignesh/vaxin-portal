@@ -46,16 +46,9 @@ $("#email").click(function search(){
             }
             }
             
-
-            /*document.getElementById("plot").innerHTML = data.centers[0].name;
-            document.getElementById("lang").innerHTML = data.centers[0].sessions[0].vaccine;
-            /*document.getElementById("slots").innerHTML = data.centers[0].sessions[0].slots[0];*/
-            
-
-
         })
         .fail(function(){
-            alert("Please check the entered Pin code!");
+            alert("Pin code incorrect! Please check the entered Pin code!");
         })
 
         
