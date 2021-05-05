@@ -23,7 +23,7 @@ $("#email").click(function search(){
             for(i=0; i<data.centers.length; i++){
             center_names.push(data.centers[i].name + "<br>");
             console.log(data.centers[i].name);
-            document.getElementById("plot").innerHTML = center_names;
+            document.getElementById("plot").innerHTML = center_names.join("");
             for( j = 0; j < data.centers[i].sessions.length; j++){
             console.log(data.centers[i].sessions[j].vaccine);
             document.getElementById("lang").innerHTML = data.centers[i].sessions[j].vaccine ;
