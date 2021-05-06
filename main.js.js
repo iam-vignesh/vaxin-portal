@@ -1,7 +1,4 @@
 $("#plot-header").hide();  
-$("#imbd-header").hide(); 
-$("#lang-header").hide(); 
-$("#slots-available").hide(); 
 $("#null").hide(); 
 
 
@@ -24,25 +21,18 @@ $("#email").click(function search(){
                 $("#null").show(); 
                 alert("No centers in the pincode - " +$("#pincode").val()) + str;
             } else{
+            console.log(data);
             $("#null").hide();
             $("#movie-info").show(); 
             var slots_row = [];
             var center_names =[];
+            var sessions = []
             for(i=0; i<data.centers.length; i++){
-            center_names.push(data.centers[i].name + "<br>");
             console.log(data.centers[i].name);
-            $("#plot-header").show();  
+            console.log(data.centers[i].sessions.length);
+            console.log(data.centers[i].sessions[0].vaccine);
+            center_names.push("Center Name: " + data.centers[i].name + " <br> " + "Location: " + data.centers[i].block_name + "<br>" +  "Sessions: " +  data.centers[i].sessions.length + "<br>" + "Available vaccine: " + data.centers[i].sessions[0].vaccine + "<br>" + "---------------------------------------------" + "<br>" );
             document.getElementById("plot").innerHTML = center_names.join("");
-            for( j = 0; j < data.centers[i].sessions.length; j++){
-            console.log(data.centers[i].sessions[j].vaccine);
-            $("#lang-header").show();
-            document.getElementById("lang").innerHTML = data.centers[i].sessions[j].vaccine ;
-            for( k = 0; k < 4; k++){
-            slots_row.push(data.centers[0].sessions[0].slots[k]);
-            $("#slots-available").show();
-            document.getElementById("slots").innerHTML = slots_row[0] + "|" + slots_row[1] + "|" + slots_row[2] + "|" + slots_row[3];
-            }
-            }
             }
             }
             

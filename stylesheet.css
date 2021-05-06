@@ -36,8 +36,8 @@ body{
   display: block !important;
 }
 
-.table td, .table th {
-  color: white;
+#footer{
+  margin-top: 60px;
 }
 
   
