@@ -31,7 +31,7 @@ $("#email").click(function search(){
             console.log(data.centers[i].name);
             console.log(data.centers[i].sessions.length);
             console.log(data.centers[i].sessions[0].vaccine);
-            center_names.push("Center Name: " + data.centers[i].name + " <br> " + "Location: " + data.centers[i].block_name + "<br>" +  "Sessions: " +  data.centers[i].sessions.length + "<br>" + "Available vaccine: " + data.centers[i].sessions[0].vaccine + "<br>" + "---------------------------------------------" + "<br>" );
+            center_names.push("Center Name: " + data.centers[i].name + " <br> " + "Location: " + data.centers[i].block_name + "<br>" +  "Available vaccine: " + data.centers[i].sessions[0].vaccine + "<br>" + "---------------------------------------------" + "<br>" );
             document.getElementById("plot").innerHTML = center_names.join("");
             }
             }
